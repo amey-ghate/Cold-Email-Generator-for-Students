@@ -81,7 +81,7 @@ Before you begin, ensure you have the following installed on your system:
 - Enter your name: `Jane Doe`
 - Enter your university/organization: `University of Example`
 - LinkedIn Profile: `https://www.linkedin.com/in/janedoe`
-- Portfolio Website (Optional): `https://janedoeportfolio.com`
+- Portfolio Website (Optional): `https://janedoeportfolio.com/projects`
 
 ### Generated Email:
 A professionally crafted email with:
