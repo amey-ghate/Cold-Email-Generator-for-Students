@@ -1,20 +1,20 @@
 # 📧 Cold Email Generator for Students
 
-This project is a **Cold Email Generator for Students**, designed to help students create professional and tailored cold emails for job applications. Powered by Groq's advanced LLMs, this tool extracts job descriptions from URLs and crafts customized emails based on the extracted details and user inputs.
+This project is a **Cold Email Generator for Students**, designed to help students craft professional and tailored cold emails for job applications. By leveraging AI, this tool extracts job descriptions, analyzes the candidate's LinkedIn and portfolio links, and generates a personalized email highlighting why the candidate is an excellent fit for the role.
 
 ---
 
 ## Features
 
-- **Job Description Extraction**: Automatically scrapes job descriptions from the provided URL.
-- **Customizable Inputs**: Allows users to input their name, university/organization, and other key details.
-- **Cold Email Generation**: Creates a professional cold email in four structured paragraphs:
-  1. **Introduction**
-  2. **Experience and Skills**
-  3. **Why Choose Me**
-  4. **Call to Action**
-- **Vibrant User Interface**: Clean and vibrant design for a better user experience.
-- **Download Option**: Users can download the generated email as a text file.
+- **Job Description Extraction**: Automatically scrapes job descriptions from URLs.
+- **LinkedIn and Portfolio Analysis**: Processes LinkedIn and optional portfolio links to extract relevant skills and achievements.
+- **AI-Powered Personalization**: Generates a professional cold email with structured content:
+  1. Introduction of the candidate.
+  2. Highlighting relevant experiences and skills.
+  3. Why the candidate is the perfect fit.
+  4. Call to action.
+- **User-Friendly UI**: Interactive and vibrant interface for seamless usage.
+- **Download Option**: Download the generated email as a `.txt` file.
 
 ---
 
@@ -51,15 +51,18 @@ Before you begin, ensure you have the following installed on your system:
    streamlit run main.py
     ```
 
-2. When prompted in the application:
+2. In the application, provide the following details:
 
-    - **Enter the Job URL**: Provide the URL for the job posting you’re applying to.
-    - **Your Name**: Enter your full name (used for personalization in the email).
-    - **Your University/Organization**: Provide your current university or organization name (e.g., "University of Example").
-    - **Groq API Key**: Enter your Groq API key when prompted.
+    - **Enter the Job URL**: The URL of the job posting.
+    - **Your Name**: Enter your full name.
+    - **Your University/Organization**: Your current university or workplace.
+    - **LinkedIn Profile**: A link to your LinkedIn profile (required).
+    - **Portfolio Website**: A link to your portfolio or website (optional).
+    - **Groq API Key**: Your Groq API Key (required).
 
 3. Click the **Extract Job Details and Generate Email** button to start the process.
 4. Once the job description is extracted:
+    - The tool will analyze LinkedIn and portfolio links.
     - A **Cold Email** is generated, which can be previewed in the app.
     - Download the email as a `.txt` file for further use.
 
@@ -77,6 +80,8 @@ Before you begin, ensure you have the following installed on your system:
 - Enter the job URL: `https://example.com/job-posting`
 - Enter your name: `Jane Doe`
 - Enter your university/organization: `University of Example`
+- LinkedIn Profile: `https://www.linkedin.com/in/janedoe`
+- Portfolio Website (Optional): `https://janedoeportfolio.com`
 
 ### Generated Email:
 A professionally crafted email with:
@@ -93,7 +98,7 @@ A professionally crafted email with:
 
 ## Customization
 
-- **Email Structure**: The email template can be modified in the `PromptTemplate` sections of `main.py`.
+- **Email Structure**: Modify the email template in the `PromptTemplate` and `ChatPromptTemplate` sections  of `main.py`.
 - **Styling**: Update the CSS in the `st.markdown` section of `main.py` to further customize the UI.
 
 ---
