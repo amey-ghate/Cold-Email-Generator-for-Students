@@ -69,7 +69,6 @@ Before you begin, ensure you have the following installed on your system:
 - `main.py`: The main script to run the Streamlit application.
 - `requirements.txt`: Lists the required Python dependencies for the project.
 - `README.md`: This documentation file.
-- 
 ---
 
 ## Example Workflow
